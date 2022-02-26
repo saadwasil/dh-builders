@@ -1,0 +1,23 @@
+.btn{
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    &-primary{
+        background-color: map-get($palette, light-blue);
+        color: map-get($palette, white);
+        &:hover{
+            background-color: darken($color: map-get($palette, light-blue), $amount: 25%);
+        }
+    }
+    &-outline-primary{
+        border: 1px solid map-get($palette, light-blue);
+        background-color: transparent;
+        color: map-get($palette, light-blue);
+        &:hover{
+            background-color: map-get($palette, light-blue);
+            color: map-get($palette, white);
+        }
+    }
+}

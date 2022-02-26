@@ -1,0 +1,13 @@
+.section{
+    padding: 80px 0px;
+    &:nth-child(even){
+        background-color: map-get($palette, dark-blue);
+    }
+    &:nth-child(odd){
+        background-color: map-get($palette, darker-blue);
+    }
+
+    @include breakpoint('<=small'){
+        padding: 40px 0px;
+    }
+}

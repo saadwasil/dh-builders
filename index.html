@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DH Builders</title>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Swiper Stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+</head>
+<body>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <header>
+                <div class="topbar">
+                    <div class="phone"><a href="tel:123-456-7890"><i class="fas fa-phone-alt"></i> 123-456-7890</a></div>
+                    <div class="email"><a href="mailto:email@example.com"><i class="fas fa-envelope"></i> email@example.com </a></div>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fas fa-rss-square"></i></a></li>
+                    </ul>
+                </div>
+                <div class="navbar">
+                    <h1>DH Builders</h1>
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <span id="menu-close-button" onclick="closeNav()"><i class="fas fa-times"></i></span>
+                    </nav>
+                    <button class="btn btn-outline-primary">Get a Free Quote</button>
+                    <button id="mobile-menu-button" onclick="openNav()"><i class="fas fa-bars"></i></button>
+                </div>
+            </header>
+            <div class="banner">
+                <span class="house-icon">
+                    <i class="fas fa-home"></i>
+                </span>
+                <h2>We Build Dream Houses</h2>
+                <p>Do you dream of an awesome house?<span class="line-break"> </span>We can make it a reality.</p>
+                <button class="btn btn-primary">Get a Free Quote <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section">
+        <div class="container">
+            <h2 class="section-heading">Welcome to DH Builders LTD</h2>
+            <p class="subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="qualities">
+                <article>
+                    <span class="quality-icon"><i class="fas fa-globe-asia"></i></span>
+                    <h3>Experienced</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                </article>
+                <article>
+                    <span class="quality-icon"><i class="fas fa-briefcase"></i></span>
+                    <h3>Professional</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                </article>
+                <article>
+                    <span class="quality-icon"><i class="fas fa-shield-alt"></i></span>
+                    <h3>Reliable</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                </article>
+                <article>
+                    <span class="quality-icon"><i class="far fa-clock"></i></span>
+                    <h3>Fast</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services section">
+        <div class="container">
+            <h2 class="section-heading">Services</h2>
+            <div class="services-inner">
+                <nav class="service-menu" id="service-menu">
+                    <ul>
+                        <li class="active" data-content="plumbing"><i class="fas fa-wrench"></i> Plumbing</li>
+                        <li data-content="electricity"><i class="fas fa-bolt"></i> Electricity</li>
+                        <li data-content="carpentry"><i class="fas fa-tools"></i> Carpentry</li>
+                        <li data-content="decoration"><i class="fas fa-lightbulb"></i> Decoration</li>
+                        <li data-content="refurbishment"><i class="fas fa-comments"></i> Refurbishments</li>
+                        <li data-content="extensions"><i class="fas fa-wrench"></i> Extensions</li>
+                    </ul>
+                </nav>
+                <div class="service-details" id="service-details">
+                    <div class="content" id="service-plumbing">
+                        <div>
+                            <h4>Plumbing</h4>
+                            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            <ul>
+                                <li>incididunt ut labore</li>
+                                <li>nisi ut aliquip ex ea commodo</li>
+                                <li>in voluptate velit esse cillum dolore</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="img/services/plumbing.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="content" id="service-electricity">
+                        <div>
+                            <h4>Electricity</h4>
+                            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            <ul>
+                                <li>incididunt ut labore</li>
+                                <li>nisi ut aliquip ex ea commodo</li>
+                                <li>in voluptate velit esse cillum dolore</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="img/services/electricity.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="content" id="service-carpentry">
+                        <div>
+                            <h4>Carpentry</h4>
+                            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            <ul>
+                                <li>incididunt ut labore</li>
+                                <li>nisi ut aliquip ex ea commodo</li>
+                                <li>in voluptate velit esse cillum dolore</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="img/services/carpentry.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="content" id="service-decoration">
+                        <div>
+                            <h4>Decoration</h4>
+                            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            <ul>
+                                <li>incididunt ut labore</li>
+                                <li>nisi ut aliquip ex ea commodo</li>
+                                <li>in voluptate velit esse cillum dolore</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="img/services/decoration.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="content" id="service-refurbishment">
+                        <div>
+                            <h4>Refurbishment</h4>
+                            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            <ul>
+                                <li>incididunt ut labore</li>
+                                <li>nisi ut aliquip ex ea commodo</li>
+                                <li>in voluptate velit esse cillum dolore</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="img/services/refurbishment.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="content" id="service-extensions">
+                        <div>
+                            <h4>Extensions</h4>
+                            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            <ul>
+                                <li>incididunt ut labore</li>
+                                <li>nisi ut aliquip ex ea commodo</li>
+                                <li>in voluptate velit esse cillum dolore</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="img/services/extension.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects section">
+        <div class="container">
+            <h2 class="section-heading">Projects</h2>
+            <nav class="project-navigation">
+                <ul>
+                    <li class="active">Plumbing</li>
+                    <li>Electricity</li>
+                    <li>Carpentry</li>
+                    <li>Decoration</li>
+                    <li>Refurbishments</li>
+                    <li>Extensions</li>
+                </ul>
+            </nav>
+            <div class="project-images">
+                <div class="project-image">
+                    <img src="img/projects/bathroom.jpg">
+                    <div class="overlay">
+                        <div class="proj-content">
+                            <h3>Project 1</h3>
+                            <p class="project-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="img/projects/kids-room.jpg">
+                    <div class="overlay">
+                        <div class="proj-content">
+                            <h3>Project 2</h3>
+                            <p class="project-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="img/projects/kitchen-1.jpg">
+                    <div class="overlay">
+                        <div class="proj-content">
+                            <h3>Project 3</h3>
+                            <p class="project-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="img/projects/kitchen-2.jpg">
+                    <div class="overlay">
+                        <div class="proj-content">
+                            <h3>Project 4</h3>
+                            <p class="project-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="img/projects/living-room-1.jpg">
+                    <div class="overlay">
+                        <div class="proj-content">
+                            <h3>Project 5</h3>
+                            <p class="project-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="img/projects/living-room-2.jpg">
+                    <div class="overlay">
+                        <div class="proj-content">
+                            <h3>Project 6</h3>
+                            <p class="project-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="img/projects/living-room-3.jpg">
+                    <div class="overlay">
+                        <div class="proj-content">
+                            <h3>Project 7</h3>
+                            <p class="project-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="img/projects/living-room-4.jpg">
+                    <div class="overlay">
+                        <div class="proj-content">
+                            <h3>Project 8</h3>
+                            <p class="project-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="achievements section">
+        <div class="container">
+            <h2 class="section-heading">A Few Reasons Why You Should Trust Us</h2>
+            <p class="subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+            <div class="stats">
+                <div>
+                    <span class="number">20</span><span class="what">Projects <br> Completed</span>
+                </div>
+                <div>
+                    <span class="number">10</span><span class="what">Years of <br> Experience</span>
+                </div>
+                <div>
+                    <span class="number">5</span><span class="what">Business <br> Partners</span>
+                </div>
+                <div>
+                    <span class="number">24/7</span><span class="what">Interrupted <br> Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section">
+        <div class="container">
+            <h2 class="section-heading">What Our Customers Say About Us</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="testimonial">
+                        <div class="avatar"><img src="img/testimonials/1.jpg" alt=""></div>
+                        <h3>James</h3>
+                        <p class="designation">Business owner</p>
+                        <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial">
+                        <div class="avatar"><img src="img/testimonials/2.jpg" alt=""></div>
+                        <h3>Robert</h3>
+                        <p class="designation">Programmer</p>
+                        <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial">
+                        <div class="avatar"><img src="img/testimonials/3.jpg" alt=""></div>
+                        <h3>John</h3>
+                        <p class="designation">Photographer</p>
+                        <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer section">
+        <div class="container">
+            <div class="col">
+                <h3>A Few Lines</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="col">
+                <h3>Links</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Achievements</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col">
+                <h3>Services</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Plumbing</a></li>
+                        <li><a href="#">Electricity</a></li>
+                        <li><a href="#">Carpentry</a></li>
+                        <li><a href="#">Decoration</a></li>
+                        <li><a href="#">Refurbishments</a></li>
+                        <li><a href="#">Extensions</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col">
+                <h3>Contact</h3>
+                <div class="address">
+                    <span><i class="fas fa-map-marker-alt"></i></span>
+                    </span>Visit us<br>Houston, TX</span>
+                </div>
+                <div class="email">
+                    <span><i class="fas fa-envelope"></i></span>
+                    <span>Email us<br>admin@example.com</span>
+                </div>
+                <div class="call">
+                    <span><i class="fas fa-phone-alt"></i></span>
+                    <span>Call us<br>111-1111-1111</span>
+                </div>
+            </div>
+        </div>
+        <footer class="copyright-notice">
+            <div class="container">
+                <p>DH Builders LTD &copy; 2022. All rights reserved.</p>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

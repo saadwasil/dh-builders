@@ -1,0 +1,49 @@
+.testimonials{
+    color: #FDF0D5;
+    .section-heading{
+        margin-bottom: 50px;
+    }
+    .testimonial{
+        text-align: center;
+        h3{
+            color: #fff;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+        .designation{
+            margin-bottom: 20px;
+            color: rgb(197, 197, 197);
+        }
+        .avatar img{
+            border-radius: 100%;
+            width: 100px;
+            margin-bottom: 20px;
+            border: 2px solid #669BBC;
+            padding: 3px;
+        }
+        .quote{
+            color: #fff;
+            width: 55%;
+            margin: 0 auto;
+            background-color: #669bbc24;
+            padding: 20px;
+            line-height: 1.8em;
+            border-radius: 7px;
+            @include breakpoint('<=medium'){
+                width: 98%;
+            }
+            @include breakpoint('<=small'){
+                font-size: 0.9em;
+                padding: 8px;
+            }
+        }
+    }
+    .swiper-button-prev, .swiper-button-next{
+        color: #669BBC;
+    }
+    .swiper-button-prev:after, .swiper-button-next:after {
+        @include breakpoint('<=small'){
+            font-size: 1.5em;
+        }
+    }
+}

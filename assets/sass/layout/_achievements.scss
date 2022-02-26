@@ -1,0 +1,39 @@
+.achievements{
+    .stats{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        color: map-get($palette, darker-white-2);
+        @include breakpoint('<=small'){
+            flex-wrap: wrap;
+        }
+        & > div{
+            display: flex;
+            align-items: center;
+            @include breakpoint('<=small'){
+                width: 50%;
+                text-align: center;
+                margin-bottom: 20px;
+                flex-direction: column;
+            }
+            .number{
+                font-size: 3em;
+                font-weight: 800;
+                color: map-get($palette, light-blue);
+                margin-right: 10px;
+                @include breakpoint('<=medium'){
+                    font-size: 2.3em;
+                }
+                @include breakpoint('<=small'){
+                    font-size: 2em;
+                    margin-right: 0;
+                }
+            }
+        }
+        .what{
+            @include breakpoint('<=medium'){
+                font-size: 0.9em;
+            }
+        }
+    }
+}

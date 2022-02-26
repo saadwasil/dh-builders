@@ -1,0 +1,113 @@
+.projects{
+    .project-images{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .project-image{
+        width: 25%;
+        height: 250px;
+        position: relative;
+        img{
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+        .overlay{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000000b7;
+            cursor: pointer;
+        }
+        .proj-content{
+            bottom: 0px;
+            left: 0px;
+            position: absolute;
+            color: #ffffff;
+            padding: 0px 15px 15px 15px;
+
+            @include breakpoint('<=medium'){
+                font-size: 0.95em;
+            }
+        }
+        .project-summary{
+            font-size: 0.9em;
+            max-height: 0px;
+            opacity: 0;
+            color: map-get($palette, darker-white-2);
+            transition: max-height 0.4s 0s ease-in-out, opacity 0.2s;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        &:hover .project-summary{
+            max-height: 500px;
+            opacity: 1;
+        }
+    }
+}
+.project-navigation ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4px solid map-get($palette, light-blue);
+    li{
+        padding: 15px 0px;
+        color: map-get($palette, white);
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover{
+            background-color: #1e4863;
+        }
+        &.active{
+            background-color: map-get($palette, light-blue);
+        }
+    }
+}
+
+@include breakpoint('<=medium'){
+    .projects{  
+        .project-image{
+            width: 33.33%;
+            .project-summary{          
+                max-height: 500px;
+                opacity: 1;
+                
+            }
+        }
+    }
+}
+
+@include breakpoint('<=small'){
+    .projects{  
+        .project-image{
+            width: 50%;  
+        }
+    }
+    .project-navigation ul {
+        overflow-x: scroll;
+    }
+    .project-navigation ul li{
+        margin-right: 10px;
+        padding: 5px 10px;
+    }
+    .project-navigation ul li{
+        padding: 5px 10px;
+    }
+}
+
+@include breakpoint('<=xsmall'){
+    .projects{
+        .project-image{
+            width: 100%;
+        }
+    }
+    .project-summary{
+        max-height:fit-content;
+        opacity: 1;
+    }
+    
+}

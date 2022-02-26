@@ -1,0 +1,60 @@
+.footer{
+    color: map-get($palette, darker-white-2);
+    & > .container{
+        display: flex;
+        @include breakpoint('<=medium'){
+            flex-wrap: wrap;
+        }
+    }
+    & > .container > .col{
+        width: 25%;
+        margin-right: 50px;
+        @include breakpoint('<=medium'){
+            width: 42%;
+            margin-bottom: 30px;
+        }
+        @include breakpoint('<=small'){
+            width: 100%;
+            margin-bottom: 30px;
+            margin-right: 0;
+        }
+    }
+    h3{
+        color: map-get($palette, light-blue);
+        margin-bottom: 20px;
+    }
+    a{
+        color: map-get($palette, darker-white-2);
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    ul{
+        list-style-type: none;
+        li{
+            margin-bottom: 10px;
+        }
+    }
+    .address, .email, .call{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        i{
+            display: inline-block;
+            width: 20px;
+            font-size: 1.6em;
+            color: map-get($palette, light-blue);
+            margin-right: 30px;
+        }
+    }
+    p{
+        color: map-get($palette, darker-white-2);
+    }
+    .copyright-notice{
+        text-align: center;
+        margin-top: 30px;
+        border-top: 1px solid #669bbc3d;
+        padding-top: 30px;
+    }
+    padding-bottom: 30px;
+}

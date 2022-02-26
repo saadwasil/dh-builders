@@ -1,0 +1,41 @@
+h2.section-heading{
+    color: map-get($palette, white);
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: 400;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+    @include breakpoint('<=xsmall'){
+        font-size: 1.4em;
+    }
+}
+h2.section-heading::after{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 35px;
+    bottom: 0;
+    left: 50%;
+    background-color: map-get($palette, light-blue);
+    transform: translateX(-50%);
+}
+p.subheading{
+    color: map-get($palette, darker-white-2);
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    @include breakpoint('<=medium'){
+        width: 90%;
+    }
+    @include breakpoint('<=small'){
+        width: 75%;
+        font-size: 0.9em;
+    }
+    @include breakpoint('<=xsmall'){
+        width: 100%;
+    }
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,99 @@
+.services{
+    &-inner{
+        display: flex;
+    }
+}
+.service-menu ul{
+    list-style-type: none;
+    li{
+        width: 250px;
+        padding: 25px 30px;
+        background-color: map-get($palette, darker-white);
+        border-bottom: 1px solid map-get($palette, light-blue);
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover{
+            background-color: #c5d7e2;
+        }
+        &.active{
+            background-color: map-get($palette, light-blue);
+            color: map-get($palette, white);
+            i{
+                color: map-get($palette, white);
+            }
+        }
+        i{
+            font-size: 1.5em;
+            color: map-get($palette, light-blue);
+            margin-right: 22px;
+            width: 10px;
+            height: auto;
+        }
+    }
+}
+.service-details > div{
+    display: none;
+}
+.service-details > div:first-child{
+    display: flex;
+}
+.content{
+    display: flex;
+    height: 462px;
+    background-color: map-get($palette, light-blue);
+    color: map-get($palette, white);
+    h4{
+        margin-bottom: 10px;
+    }
+    p{
+        margin-bottom: 10px;
+    }
+    ul{
+        list-style-type: none;
+        padding-left: 15px;
+        margin-top: 20px;
+        li{
+            margin-bottom: 10px;
+        }
+    }
+    div{
+        padding: 20px;
+        height: 100%;
+        width: 50%;
+    }
+    div img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@include breakpoint('<=medium'){
+    .services-inner{
+        display: block;
+    }
+    .services-inner .service-menu ul li{
+        padding: 10px 10px;
+        text-align: center;
+    }
+    .services-inner .service-menu ul li i{
+        display: none;
+    }
+    .service-menu ul{
+        display: flex;
+        overflow-x: scroll;
+    }
+}
+
+@include breakpoint('<=xsmall'){
+    .services-inner .service-menu ul li{
+        padding: 5px 10px;
+    }
+    .content{
+        flex-direction: column;
+        height: auto;
+        div{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,185 @@
+.hero{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url("images/houses-header.jpg");
+    background-size: cover;
+    background-position-y: top;
+    background-attachment: fixed;
+    .topbar{
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 0px;
+        color: map-get($palette, cream);;
+        font-size: 0.9em;
+        .phone{
+            margin-right: 20px;
+        }
+        .email{
+            margin-right: 10px;
+        }
+        a{
+            color: map-get($palette, darker-white);;
+            text-decoration: none;
+        }
+        .social-icons{
+            display: flex;
+            list-style-type: none;
+            li{
+                margin-left: 10px;
+            }
+        }
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0px 0px 0px;
+        h1{
+            color: map-get($palette, white);;
+        }
+        nav ul{
+            display: flex;
+            list-style-type: none;
+            li a{
+                color: map-get($palette, darker-white);;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 0.9em;
+                padding: 10px 13px;
+                border-radius: 5px;
+                transition: 0.2s;
+                &:hover{
+                    background-color: #ffffff21;
+                }
+            }
+        }
+        #mobile-menu-button{
+            display: none;
+            padding: 0;
+            background-color: transparent;
+            color: map-get($palette, light-blue);;
+            border: 0;
+            font-size: 1.5em;
+        }
+        #menu-close-button{
+            display: none;
+        }
+    }
+    .banner{
+        text-align: center;
+        padding: 120px 0px;
+        .house-icon{
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            border: 2px solid map-get($palette, light-blue);
+            border-radius: 100%;
+            color: map-get($palette, darker-white-2);
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            background-color: rgba(18, 140, 197, 0.11);
+            i{
+                margin-top: 50%;
+                transform: translateY(-14.4px);
+            }
+        }
+        h2{
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: map-get($palette, white);
+        }
+        p{
+            margin-bottom: 40px;
+            color: map-get($palette, darker-white);
+        }
+    }
+}
+
+@include breakpoint('<=medium'){
+    .hero{
+        .navbar{
+            button.btn.btn-outline-primary{
+                display: none;
+            }
+        }
+    }
+}
+
+@include breakpoint('<=small'){
+    .hero{
+        .topbar{
+            justify-content: center;
+        }
+        .navbar{
+            nav{
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: #003049;
+                height: 100%;
+                width: 0;
+                z-index: 1;
+                overflow-x: hidden;
+                transition: 0.3s ease-in-out;
+                ul{
+                    flex-direction: column;
+                    text-align: center;
+                    justify-content: space-between;
+                    margin-top: 80px;
+                    li{
+                        margin: 0 0 50px 0;
+                        font-size: 1.8em;
+                    }
+                }
+            }
+            #mobile-menu-button{
+                display: inline-block;
+            }
+            #menu-close-button{
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 1.5em;
+                display: block;
+                padding: 20px;
+                color: #fff;
+            }
+        }
+        .banner{
+            padding: 70px 0px;
+            h2{
+                font-size: 2.2em;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 0.9em;
+                line-height: 1.7em;
+                margin-bottom: 15px;
+            }
+            .house-icon{
+                width: 60px;
+                height: 60px;
+                font-size: 1.4em;
+                margin-bottom: 20px;
+                i{
+                    transform: translateY(-11.20px);
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint('<=xsmall'){
+    .hero{
+        .topbar{
+            display: none;
+        }
+        .banner{
+            h2{
+                font-size: 1.6em;
+            }
+            .line-break::after{
+                content: "\a";
+                white-space: pre;
+            }
+        }
+    }
+}

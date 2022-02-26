@@ -1,0 +1,26 @@
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    color: #131313;
+}
+.container{
+    width: 60%;
+    margin: 0 auto;
+
+    @include breakpoint('<=xlarge') {
+        width: 85%;
+    }
+
+    @include breakpoint('<=small'){
+        width: 92%;
+    }
+
+    @include breakpoint('<=xsmall'){
+        width: 90%;
+    }
+}

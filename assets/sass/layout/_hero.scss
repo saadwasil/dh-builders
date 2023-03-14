@@ -7,7 +7,7 @@
         display: flex;
         justify-content: flex-end;
         padding: 10px 0px;
-        color: map-get($palette, cream);;
+        color: darken(map-get($palette, white), 20%);
         font-size: 0.9em;
         .phone{
             margin-right: 20px;
@@ -16,7 +16,7 @@
             margin-right: 10px;
         }
         a{
-            color: map-get($palette, darker-white);;
+            color: darken(map-get($palette, white), 20%);
             text-decoration: none;
         }
         .social-icons{
@@ -33,13 +33,13 @@
         align-items: center;
         padding: 20px 0px 0px 0px;
         h1{
-            color: map-get($palette, white);;
+            color: map-get($palette, white);
         }
         nav ul{
             display: flex;
             list-style-type: none;
             li a{
-                color: map-get($palette, darker-white);;
+                color: darken(map-get($palette, white), 20%);
                 text-decoration: none;
                 text-transform: uppercase;
                 font-size: 0.9em;
@@ -47,15 +47,20 @@
                 border-radius: 5px;
                 transition: 0.2s;
                 &:hover{
-                    background-color: #ffffff21;
+                    background-color: #ffffff25;
                 }
+            }
+        }
+        button.btn.btn-outline-primary{
+            @include breakpoint('<=medium'){
+                display: none;
             }
         }
         #mobile-menu-button{
             display: none;
             padding: 0;
             background-color: transparent;
-            color: map-get($palette, light-blue);;
+            color: map-get($palette, light-blue);
             border: 0;
             font-size: 1.5em;
         }
@@ -72,10 +77,10 @@
             height: 80px;
             border: 2px solid map-get($palette, light-blue);
             border-radius: 100%;
-            color: map-get($palette, darker-white-2);
+            color: darken(map-get($palette, white), 20%);
             font-size: 1.8em;
             margin-bottom: 20px;
-            background-color: rgba(18, 140, 197, 0.11);
+            background-color: #0f86d625;
             i{
                 margin-top: 50%;
                 transform: translateY(-14.4px);
@@ -88,17 +93,7 @@
         }
         p{
             margin-bottom: 40px;
-            color: map-get($palette, darker-white);
-        }
-    }
-}
-
-@include breakpoint('<=medium'){
-    .hero{
-        .navbar{
-            button.btn.btn-outline-primary{
-                display: none;
-            }
+            color: darken(map-get($palette, white), 20%);
         }
     }
 }
@@ -113,7 +108,7 @@
                 position: fixed;
                 top: 0;
                 left: 0;
-                background-color: #003049;
+                background-color: map-get($palette, dark-blue);
                 height: 100%;
                 width: 0;
                 z-index: 1;
@@ -140,7 +135,7 @@
                 font-size: 1.5em;
                 display: block;
                 padding: 20px;
-                color: #fff;
+                color: map-get($palette, white);
             }
         }
         .banner{

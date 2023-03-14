@@ -1,31 +1,30 @@
 .testimonials{
-    color: #FDF0D5;
     .section-heading{
         margin-bottom: 50px;
     }
     .testimonial{
         text-align: center;
         h3{
-            color: #fff;
+            color: map-get($palette, white);
             margin-bottom: 10px;
             font-size: 1.5em;
         }
         .designation{
             margin-bottom: 20px;
-            color: rgb(197, 197, 197);
+            color: darken(map-get($palette, white), 20%)
         }
         .avatar img{
             border-radius: 100%;
             width: 100px;
             margin-bottom: 20px;
-            border: 2px solid #669BBC;
+            border: 2px solid map-get($palette, light-blue);
             padding: 3px;
         }
         .quote{
-            color: #fff;
+            color: map-get($palette, white);
             width: 55%;
             margin: 0 auto;
-            background-color: #669bbc24;
+            background-color: lighten(map-get($palette, dark-blue), 3%);
             padding: 20px;
             line-height: 1.8em;
             border-radius: 7px;

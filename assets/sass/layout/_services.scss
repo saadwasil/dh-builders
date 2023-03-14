@@ -8,12 +8,12 @@
     li{
         width: 250px;
         padding: 25px 30px;
-        background-color: map-get($palette, darker-white);
+        background-color: darken(map-get($palette, white), 10%);
         border-bottom: 1px solid map-get($palette, light-blue);
         cursor: pointer;
         transition: 0.2s;
         &:hover{
-            background-color: #c5d7e2;
+            background-color: lighten(map-get($palette, light-blue), 25%);
         }
         &.active{
             background-color: map-get($palette, light-blue);

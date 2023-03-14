@@ -1,5 +1,5 @@
 .footer{
-    color: map-get($palette, darker-white-2);
+    color: darken(map-get($palette, white), 20%);
     & > .container{
         display: flex;
         @include breakpoint('<=medium'){
@@ -24,7 +24,7 @@
         margin-bottom: 20px;
     }
     a{
-        color: map-get($palette, darker-white-2);
+        color: darken(map-get($palette, white), 20%);
         &:hover{
             text-decoration: underline;
         }
@@ -48,12 +48,12 @@
         }
     }
     p{
-        color: map-get($palette, darker-white-2);
+        color: darken(map-get($palette, white), 20%);
     }
     .copyright-notice{
         text-align: center;
         margin-top: 30px;
-        border-top: 1px solid #669bbc3d;
+        border-top: 1px solid lighten(map-get($palette, dark-blue), 3%);
         padding-top: 30px;
     }
     padding-bottom: 30px;

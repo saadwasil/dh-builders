@@ -3,7 +3,7 @@
         display: flex;
         justify-content: space-between;
         margin-top: 60px;
-        color: map-get($palette, darker-white-2);
+        color: darken(map-get($palette, white), 20%);
         @include breakpoint('<=small'){
             flex-wrap: wrap;
         }

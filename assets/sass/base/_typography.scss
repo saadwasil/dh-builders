@@ -21,7 +21,7 @@ h2.section-heading::after{
     transform: translateX(-50%);
 }
 p.subheading{
-    color: map-get($palette, darker-white-2);
+    color: darken(map-get($palette, white), 20%);
     text-align: center;
     width: 50%;
     margin: 0 auto;
